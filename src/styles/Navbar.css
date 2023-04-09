@@ -6,44 +6,48 @@
     --prussian-blue: #102e4aff;
 }
 .navbar {
-    position: relative;
-    left: 5%;
     list-style: none;
     display: flex;
     flex-direction: row;
     margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
 }
-
 .navbar a {
     text-decoration: none;
+}
+ul{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    padding-inline-start: 0;
+}
+.nav-item{
     color: black;
     list-style: none;
-}
-ul li{
     font-size: 20px;
     margin: 5px;
     display:inline;
+    
+}
+.nav-link{
     background-color: var(--tropical-indigo);
     padding: 7px;
     border-radius: 5px;
 }
-li .active{
+.active{
     background-color: var(--medium-slate-blue);
-    padding: 7px;
-    border-radius: 5px;
     color: var(--icterine);
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
     .navbar{
-        margin-top: 0;
-        align-content: center;
-        left: -5vw;
+        text-align: center;
     }
-    ul li{
-        font-size: 10px;
+    .nav-link{
+        font-size: 13px;
         padding: 3px;
     }
-    li .active{
-        padding: 3px;
+    .active{
+      padding: 3px;
     }
   }

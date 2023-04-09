@@ -4,10 +4,11 @@ import '../styles/Navbar.css';
 
 const styles = {
   navbarStyle: {
-    
+    margin:'auto',
   },
   listStyle: {
-    display: 'inline'
+    display: 'inline',
+    margin:'auto'
   }
 };
 
@@ -36,20 +37,20 @@ function Navbar({ currentPage, pageHandler }) {
       </li>
       <li className="nav-item">
         <a
-          href="#contact"
-          onClick={() => pageHandler('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-        >
-          Contact
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
           href="#resume"
           onClick={() => pageHandler('Resume')}
           className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
         >
           Resume
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#contact"
+          onClick={() => pageHandler('Contact')}
+          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+        >
+          Contact
         </a>
       </li>
     </ul>

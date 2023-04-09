@@ -1,3 +1,200 @@
+:root{
+    --tropical-indigo: #a682ffff;
+    --medium-slate-blue: #715affff;
+    --icterine: #f2f230ff;
+    --maya-blue: #55c1ffff;
+    --prussian-blue: #102e4aff;
+    --grey: #A39A92;
+}
+
+#about_links {
+    display:flex;
+    flex-direction: row;
+    background-color: black;
+    
+}
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical 
+  }
+  
+
+  input[type=submit] {
+    background-color: var(--tropical-indigo);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: var(--medium-slate-blue);
+  }
+  
+  
+  .formContainer {
+    border-radius: 5px;
+    border: solid var(--grey);
+    background-color: black;
+    padding: 20px;
+  }
+  #contactInfo{
+    display:flex;
+    flex-direction: column;
+    max-width: fit-content;
+    padding:10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: solid var(--grey);
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+  }
+  #contactInfo a{
+    text-decoration: none;
+    color:white;
+  }
+section p {
+    display:flex;
+}
+.aboutMe #patrick_img{
+    margin: 15px;
+    float: left;
+    display:inline;
+}
+#about_links a{
+    margin:auto;
+}
+#about_links i{
+    display: inline-block;
+    color: white;
+    margin: 10px;
+}
+.portfolioContainer{
+    max-width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+#projects{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.card img{
+    border: solid black
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    min-width: 40%;
+    max-width: 45%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.projectLinks{
+    display:inline-block;
+    background-color: white;
+    padding:5px;
+    border-radius: 5rem;
+    margin: 5px;
+    position: relative;
+    bottom: -20px;
+    font-size: 30px;
+}
+
+.resumeContainer{
+    margin:'auto';
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+#resume-link{
+    display: inline-block;
+    color: black;
+    margin: auto;
+    max-width: fit-content;
+}
+.submenu{
+
+        text-align:left;
+        font-size: 15px;
+    font-size: 15px;
+    display:flex;
+    flex-direction: column;
+    list-style: inside;
+    margin:0px;
+    text-align: left;
+}
+.skillList{
+    margin:auto;
+    list-style: none;
+    display:flex;
+    text-align: center;
+    align-content: center;
+    max-height: fit-content;
+}
+.container{
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+    display:flex;
+    margin:auto;
+    max-width: fit-content;
+}
+li{
+    margin: auto;
+    text-align: left;
+}
+.skillItem{
+    color:var(--icterine);
+    background-color: black;
+    border: solid var(--grey);
+    border-radius: 1em;
+    max-width: 40%;
+    padding:10px;
+    margin:10px;
+}
+.skillItem li{
+    color:white;
+    text-align: left;
+    padding:5px;
+}
+details{
+    background-color: var(--prussian-blue);
+    text-align: center;
+    margin:auto;
+    padding:10px;
+    border-radius: 10rem;
+    max-width: 100%;
+}
+summary{
+width:100%
+}
+iframe{
+    max-width: 60%;
+    overflow:hidden;
+    top:0; 
+    left:0; 
+    bottom:0; 
+    right:0; 
+    width:1000px; 
+    height:500px; 
+    border:none; 
+    margin:0; 
+    padding:0; 
+    overflow:hidden; 
+    z-index:999999;
+    margin:auto;
+    min-height: 70em;
+}
 
 @media screen and (max-width: 500px) {
     section {
@@ -6,22 +203,66 @@
         padding: 5px
     }
     section br{
-        max-height: 5px;
+        max-height: 1px;
+    }
+    iframe{
+        width:100vw;
+        padding:0px;
+    }
+    summary{
+        padding:5px;
+        text-align: center;
     }
     section p{
         min-width: 40vw;
-        margin: 0
+        margin: 0px;
+        display:inline-block;
+        font-size: 15px;
     }
-    section img{
-        margin: auto;
-        position:relative;
-        width: 80%;
-        align-self: center;
+    .skillItem{
+        margin:auto;
+        font-size: 17px;
     }
-    #patrick_img{
-        margin: auto;
-        position:relative;
-        width: 80%;
+    .submenu li{
+        text-indent: 0;
+    text-align: left;
+    }
+    .projectLinks{
+        display:inline-block;
+        background-color: white;
+        padding:5px;
+        border-radius: 5rem;
+        margin: 5px;
+        position: relative;
+        bottom: -40px;
+    }
+    .aboutMe #patrick_img{
         align-self: center;
+        margin: 0px;
+        width: 80%;
+        float:unset;
+        display:flex;
+        flex-wrap: wrap;
+        position:initial;
+    }
+    .aboutMe{
+        align-items: center;
+        display:flex;
+    flex-direction: column;
+    }
+    details{
+       display:none;
+    }
+    #resume-link{
+        font-size: 20px;
+    }
+    i{
+        margin: 10px;
+        font-size: 35px;
+    }
+    .card{
+        margin-bottom: 40px;
+        margin:20px,80px;
+        min-width: 90%;
     }
   }

@@ -1,7 +1,7 @@
 :root{
     --tropical-indigo: #a682ffff;
     --medium-slate-blue: #715affff;
-    --cornflower-blue: #5887ffff;
+    --icterine: #f2f230ff;
     --maya-blue: #55c1ffff;
     --prussian-blue: #102e4aff;
 }
@@ -9,8 +9,12 @@
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
-    background-color: var(--prussian-blue);
-        color: white;
+    background-color: black;
+    color: white;
+    max-width: 100%;
+}
+#root{
+    max-width: 100%;
 }
 @keyframes slideInLeft {
     0% {
