@@ -1,0 +1,46 @@
+:root{
+    --tropical-indigo: #a682ffff;
+    --medium-slate-blue: #715affff;
+    --cornflower-blue: #5887ffff;
+    --maya-blue: #55c1ffff;
+    --prussian-blue: #102e4aff;
+}
+*{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: var(--prussian-blue);
+        color: white;
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0%;
+    }
+    100% {
+        
+        transform: translateX(0);
+        opacity: 100%;
+    }
+  }
+section{
+    animation-name: slideInLeft;
+    animation-duration: 1.8s;
+}
+
+#about_links i{
+    font-size: 50px;
+    display: flex;
+    text-align: center;
+    color: var(--prussian-blue);
+    text-decoration: none;
+}
+@media screen and (min-width: 280px) {
+    body{
+        max-width: 100%;
+        
+    }
+    section p{
+        max-width: 100%;
+    }
+  }

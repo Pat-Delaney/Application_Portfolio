@@ -1,0 +1,27 @@
+
+@media screen and (max-width: 500px) {
+    section {
+        min-width: 50vw;
+        font-size: 20px;
+        padding: 5px
+    }
+    section br{
+        max-height: 5px;
+    }
+    section p{
+        min-width: 40vw;
+        margin: 0
+    }
+    section img{
+        margin: auto;
+        position:relative;
+        width: 80%;
+        align-self: center;
+    }
+    #patrick_img{
+        margin: auto;
+        position:relative;
+        width: 80%;
+        align-self: center;
+    }
+  }
