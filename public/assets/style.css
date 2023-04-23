@@ -21,23 +21,10 @@ body{
     color: var(--dark-slate-gray);
     max-width: 100%;
 }
-#backgroundimages{
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    display:inline-block
-}
-#backgroundimages #image1{
-    z-index: 1;
-}
-#backgroundimages #image2{
-    z-index: 2;
-}
+
 #root{
     max-width: 100%;
+
 }
 @keyframes slideInLeft {
     0% {
