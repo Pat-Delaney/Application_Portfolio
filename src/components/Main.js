@@ -16,6 +16,10 @@ function Main() {
 
   return (
     <main>
+      <div id="backgroundimages">
+        <img src='./assets/background2.png' alt='background 2'></img>
+        <img src='./assets/background3.png' alt='background 3'></img>
+      </div>
     <header>
         <Header />
         <Navbar currentPage={currentPage} pageHandler={pageHandler} />

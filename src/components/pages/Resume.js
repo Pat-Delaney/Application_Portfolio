@@ -4,6 +4,13 @@ export default function Resume() {
   return (
     <div className='resumeContainer'>
       <h2>My Experience</h2>
+      <div id='resume'>
+      <a id="resume-link" target="_blank" rel='noreferrer' class="nav-link" href="https://docs.google.com/document/d/e/2PACX-1vRMOJ-QDqPnQ0bDgEZCmXmKdFkth5-FSGNOCe1UCyCYx8LHMT3dCPn1wG1ep9ZWwwvRCjbVPwAABR9_/pub">My Resume</a>
+      <details>
+      <summary>Expand to view</summary>
+      <p><iframe title='resume' src="https://docs.google.com/document/d/e/2PACX-1vRMOJ-QDqPnQ0bDgEZCmXmKdFkth5-FSGNOCe1UCyCYx8LHMT3dCPn1wG1ep9ZWwwvRCjbVPwAABR9_/pub?embedded=true"></iframe></p>
+      </details>
+      </div>
       <div>
         <h3>My skills:</h3>
         <div className="container">
@@ -27,12 +34,6 @@ export default function Resume() {
         </ul>
       </div>
     </div>
-      <details>
-<summary>Expand to view</summary>
-<p><iframe  src="https://docs.google.com/document/d/e/2PACX-1vRMOJ-QDqPnQ0bDgEZCmXmKdFkth5-FSGNOCe1UCyCYx8LHMT3dCPn1wG1ep9ZWwwvRCjbVPwAABR9_/pub?embedded=true"></iframe></p>
-</details>
-      
-      <a id="resume-link" target="_blank" class="nav-link" href="https://docs.google.com/document/d/e/2PACX-1vRMOJ-QDqPnQ0bDgEZCmXmKdFkth5-FSGNOCe1UCyCYx8LHMT3dCPn1wG1ep9ZWwwvRCjbVPwAABR9_/pub">My Resume</a>
     </div>
   );
 }

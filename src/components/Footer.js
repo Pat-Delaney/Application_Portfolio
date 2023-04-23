@@ -21,7 +21,7 @@ function Footer() {
 
   return (
       <footer style={styles.textStyle}>
-      <hr/>
+
     Patrick Delaney 2023<br/>
     <div style={styles.linkStyle} id="footer_links">
         <a s href="https://github.com/Pat-Delaney" target="_blank" class="card-link"><i className="fab fa-github"></i></a>

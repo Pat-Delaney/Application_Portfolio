@@ -1,17 +1,13 @@
 :root{
-    --tropical-indigo: #a682ffff;
-    --medium-slate-blue: #715affff;
-    --icterine: #f2f230ff;
-    --maya-blue: #55c1ffff;
-    --prussian-blue: #102e4aff;
-    --grey: #A39A92;
+    --tyrian-purple: #611c35ff;
+    --dark-slate-gray: #254441ff;
+    --cosmic-latte: #f9f5e3ff;
+    --zomp: #43aa8bff;
 }
 
 #about_links {
     display:flex;
     flex-direction: row;
-    background-color: black;
-    
 }
 input[type=text], select, textarea {
     width: 100%; 
@@ -26,7 +22,7 @@ input[type=text], select, textarea {
   
 
   input[type=submit] {
-    background-color: var(--tropical-indigo);
+    background-color: var(--zomp );
     color: white;
     padding: 12px 20px;
     border: none;
@@ -43,7 +39,7 @@ input[type=text], select, textarea {
   .formContainer {
     border-radius: 5px;
     border: solid var(--grey);
-    background-color: black;
+    background-color: var(--cosmic-latte);
     padding: 20px;
   }
   #contactInfo{
@@ -62,6 +58,18 @@ input[type=text], select, textarea {
     text-decoration: none;
     color:white;
   }
+  section{
+    background-color: hsla(49, 65%, 93%, .3);
+    border-radius: .5em;
+    backdrop-filter: blur(5px);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 5px;
+    max-width: 90%;
+    animation-name: slideInLeft;
+    animation-duration: 1.8s;
+  }
 section p {
     display:flex;
 }
@@ -75,7 +83,9 @@ section p {
 }
 #about_links i{
     display: inline-block;
-    color: white;
+    color: var(--dark-slate-gray);
+    background:none;
+    text-decoration: none;
     margin: 10px;
 }
 .portfolioContainer{
@@ -118,9 +128,16 @@ section p {
 }
 #resume-link{
     display: inline-block;
-    color: black;
+    color: var(--cosmic-latte);
     margin: auto;
     max-width: fit-content;
+}
+#resume{
+    background-color: var(--dark-slate-gray);
+    max-width: fit-content;
+    margin: auto;
+    border-radius: .5em;
+    color: var(--zomp)
 }
 .submenu{
 
@@ -142,8 +159,6 @@ section p {
     max-height: fit-content;
 }
 .container{
-    border-radius: 5px;
-    background-color: black;
     padding: 20px;
     display:flex;
     margin:auto;
@@ -154,8 +169,8 @@ li{
     text-align: left;
 }
 .skillItem{
-    color:var(--icterine);
-    background-color: black;
+    color:var(--dark-slate-gray);
+    background-color: var(--cosmic-latte);
     border: solid var(--grey);
     border-radius: 1em;
     max-width: 40%;
@@ -163,7 +178,7 @@ li{
     margin:10px;
 }
 .skillItem li{
-    color:white;
+    color:var(--dark-slate-gray);
     text-align: left;
     padding:5px;
 }

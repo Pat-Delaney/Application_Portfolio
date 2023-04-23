@@ -18,7 +18,6 @@ function Header() {
       <div  className="header" style={styles.titleStyle}>
       <h1>Patrick Delaney</h1>
       <p style={styles.captionStyle}>Web Development, Media, Visual Arts</p>
-      <hr/>
       </div>
   );
 }

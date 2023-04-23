@@ -1,9 +1,8 @@
 :root{
-    --tropical-indigo: #a682ffff;
-    --medium-slate-blue: #715affff;
-    --icterine: #f2f230ff;
-    --maya-blue: #55c1ffff;
-    --prussian-blue: #102e4aff;
+    --tyrian-purple: #611c35ff;
+    --dark-slate-gray: #254441ff;
+    --cosmic-latte: #f9f5e3ff;
+    --zomp: #43aa8bff;
 }
 .navbar {
     list-style: none;

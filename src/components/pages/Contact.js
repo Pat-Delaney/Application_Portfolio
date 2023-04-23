@@ -20,8 +20,8 @@ export default function Contact() {
       <p style={styles.textStyle}>Phone: (914)787-0861</p>
       <p style={styles.textStyle}>Email: <a href="mailto: pdelaney@outlook.com" id="email_link">pdelaney@outlook.com</a>
     </p>
-    {/* </div>
-      {/* <div className="formContainer">
+    </div>
+    <div className="formContainer">
     <form action="mailto:pdelaney@outlook.com" method="GET">
     <label for="subject">Subject:</label>
     <input type="text" id="subject" name="subject" placeholder="Subject..."/>
@@ -31,7 +31,7 @@ export default function Contact() {
 
     <input type="submit" value="Submit"/>
 
-  </form> */}
+  </form>
 </div> 
    
     </div>
