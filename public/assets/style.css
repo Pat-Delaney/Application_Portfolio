@@ -12,14 +12,18 @@
 header{
     z-index: 4;
 }
+main{
+    min-height: 100%
+}
 body{
     z-index: 4;
     background-image: url('./background.png');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-position: top;
+    background-size: 100vw;
     background-color: var(--cosmic-latte);
     color: var(--dark-slate-gray);
-    max-width: 100%;
+    width: 100%;
 }
 
 #root{

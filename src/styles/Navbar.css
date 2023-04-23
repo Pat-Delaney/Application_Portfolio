@@ -30,13 +30,14 @@ ul{
     
 }
 .nav-link{
-    background-color: var(--tropical-indigo);
+    background-color: hsla(174, 30%, 53%, .3);
+    border: solid var(--dark-slate-gray);
     padding: 7px;
     border-radius: 5px;
 }
 .active{
-    background-color: var(--medium-slate-blue);
-    color: var(--icterine);
+    background-color: hsla(162, 43%, 46%, .3);
+    color: var(--tyrian-purple)
 }
 @media screen and (max-width: 500px) {
     .navbar{

@@ -5,7 +5,6 @@ const styles = {
   },
   cardStyle:{
     maxWidth: '100',
-    backgroundColor:'grey',
     textAlign:'center',
     borderRadius:'1rem'
   },
@@ -25,7 +24,7 @@ export default function Portfolio(props) {
       <h2 style={styles.titleStyle}>My Work</h2>
       <div id="projects">
       {props.projects.map(project => (
-        <div className="card" style={styles.cardStyle} key={project.id}>
+        <div className="card projectCard" style={styles.cardStyle} key={project.id}>
          <img style={styles.imageStyle} className="card-img-top" src={project.imgsrc} alt="Deployed web app"/>
           <div className="card-body">
             <h5 className="card-title">{project.name}</h5>

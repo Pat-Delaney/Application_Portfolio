@@ -20,6 +20,8 @@ hr{
 header h1 {
  font-size: 40px;
  padding: 30px;
+ position: relative;
+ top:-10px;
  color: var(--dark-slate-gray);
  background-color: var(--ic);
 margin-bottom: -40px;

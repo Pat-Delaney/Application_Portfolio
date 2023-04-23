@@ -4,7 +4,7 @@ const styles = {
         textStyle:{
           fontSize: '15px',
           textAlign: 'center',
-          color: 'gray'
+
         },
         linkStyle:{
             backgroundColor: 'none',
