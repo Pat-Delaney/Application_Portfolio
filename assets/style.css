@@ -1,17 +1,36 @@
 :root{
-    --tropical-indigo: #a682ffff;
-    --medium-slate-blue: #715affff;
-    --icterine: #f2f230ff;
-    --maya-blue: #55c1ffff;
-    --prussian-blue: #102e4aff;
+    --tyrian-purple: #611c35ff;
+--dark-slate-gray: #254441ff;
+--cosmic-latte: #f9f5e3ff;
+--zomp: #43aa8bff;
+
 }
 *{
     font-family: Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+header{
+    z-index: 4;
 }
 body{
-    background-color: black;
-    color: white;
+    z-index: 4;
+    background-image: url('./background.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: var(--cosmic-latte);
+    color: var(--dark-slate-gray);
     max-width: 100%;
+}
+#backgroundimages{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    background-color: none;
+    display:inline-block
 }
 #root{
     max-width: 100%;
