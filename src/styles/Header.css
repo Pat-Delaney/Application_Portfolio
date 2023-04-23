@@ -12,6 +12,7 @@ header {
   position: relative;
   border-radius: .5em;
   backdrop-filter: blur(5px);
+  border: solid var(--dark-slate-gray);
 }
 hr{
 
@@ -23,7 +24,6 @@ header h1 {
  position: relative;
  top:-10px;
  color: var(--dark-slate-gray);
- background-color: var(--ic);
 margin-bottom: -40px;
 }
 header p{
