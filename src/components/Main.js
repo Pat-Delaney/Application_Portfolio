@@ -17,8 +17,8 @@ function Main() {
   return (
     <main>
       <div id="backgroundimages">
-        <img src='./assets/background2.png' alt='background 2'></img>
-        <img src='./assets/background3.png' alt='background 3'></img>
+        <img id='image1' src='./assets/background2.png' alt='background 2'></img>
+        <img id='image2' src='./assets/background3.png' alt='background 3'></img>
       </div>
     <header>
         <Header />
