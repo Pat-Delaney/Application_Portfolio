@@ -13,6 +13,14 @@ const styles = {
 const projects = [
   {
     id: '1',
+    name: "Savr Couponing",
+    desc: "Developed using React, GraphQL, MongoDB and Apollo Provider, an online deal sharing site for the Seattle area.",
+    github:"https://github.com/Pat-Delaney/Savr",
+    deployed:"https://savr-app.herokuapp.com/",
+    imgsrc:"./assets/savr.png"
+  },
+  {
+    id: '2',
     name: "Bargain Bin Electronics",
     desc: "Developed using Node.js, Express.js, Sequelize, and MySQL, modeling an online marketplace.",
     github:"https://github.com/Pat-Delaney/bargain-bin-electronics",
@@ -20,7 +28,7 @@ const projects = [
     imgsrc:"./assets/bargain-bin.jpg"
   },
   {
-    id: '2',
+    id: '3',
     name: "Worldwide News",
     desc: "Developed using Jquery, Materialize CSS library and third party APIs Current and Gnews, modeling a news dashboard.",
     github:"https://github.com/Pat-Delaney/worldwidenews",
@@ -28,7 +36,7 @@ const projects = [
     imgsrc:"./assets/worldwidenews.jpg"
   },
   {
-    id: '3',
+    id: '4',
     name: "Just Another Text Editor",
     desc: "Developed using Node.js, OpenDB, Webpack, Babel, Code Mirror, and Express.js, this PWA fuctions as a simple text editor.",
     github:"https://github.com/Pat-Delaney/text_editor",
@@ -36,7 +44,7 @@ const projects = [
     imgsrc:"./assets/jate.png"
   },
   {
-    id: '4',
+    id: '5',
     name: "Work Scheduler",
     desc: "Developed using bootstrap, day.js and jquery, models a scheduling app.",
     github:"https://github.com/Pat-Delaney/work_scheduler",
@@ -44,20 +52,12 @@ const projects = [
     imgsrc:"./assets/workscheduler.jpg"
   },
   {
-    id: '5',
+    id: '6',
     name: "Weather Dashboard",
     desc: "Developed using Jquery, Bootstrap and Third Party API OpenWeather, modeling a weather dashboard.",
     github:"https://github.com/Pat-Delaney/weather_dashboard",
     deployed:"https://pat-delaney.github.io/weather_dashboard/",
     imgsrc:"./assets/weather-dashboard.jpg"
-  },
-  {
-    id: '6',
-    name: "Password Generator",
-    desc: "Developed using HTML, Javascript and CSS, one of my first web development projects.",
-    github:"https://github.com/Pat-Delaney/password_generator",
-    deployed:"https://pat-delaney.github.io/password_generator/",
-    imgsrc:"./assets/passwordGenerator.jpg"
   }
 ];
 
