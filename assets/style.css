@@ -30,6 +30,20 @@ body{
     max-width: 100%;
 
 }
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate infinite;
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 822;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
 @keyframes slideInLeft {
     0% {
         transform: translateX(-100%);
@@ -41,7 +55,7 @@ body{
         opacity: 100%;
     }
   }
-section{
+#sectionAnimate{
     animation-name: slideInLeft;
     animation-duration: 1.8s;
 }
