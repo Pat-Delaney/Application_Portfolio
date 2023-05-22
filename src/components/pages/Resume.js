@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Resume() {
   return (
-    <div className='resumeContainer'>
+    <div className='resumeContainer animate'>
 
         <div className="container">
         <div className='skillList'>

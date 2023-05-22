@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+}
+
+svg {
+    display: block;
+    font: 8em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}

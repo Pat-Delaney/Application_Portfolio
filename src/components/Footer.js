@@ -28,7 +28,6 @@ function Footer() {
         <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="delaney-pat" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/delaney-pat?trk=profile-badge"><i className="fab fa-linkedin"></i></a></div>
         <a href="mailto: pdelaney@outlook.com" className="card-link"><i class="fas fa-envelope"></i></a>
     </div>
-    <br/>References available upon request
     </footer>
   );
 }

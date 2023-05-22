@@ -78,7 +78,7 @@ export default function Section({ currentPage, pageHandler }) {
 
 
   return (
-    <section style={styles.bodyStyles} className="section">
+    <section style={styles.bodyStyles} className="sectionAnimate">
       {renderPage()}
     </section>
   );

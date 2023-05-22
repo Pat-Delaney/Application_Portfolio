@@ -14,7 +14,7 @@ const styles = {
 };
 export default function Contact() {
   return (
-    <div>
+    <div className='animate'>
       <h2 style={styles.titleStyle}>Contact me:</h2>
       <div id="contactInfo">
       <p style={styles.textStyle}>Phone: (914)787-0861</p>

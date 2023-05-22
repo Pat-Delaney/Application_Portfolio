@@ -20,7 +20,7 @@ const styles = {
 };
 export default function Portfolio(props) {
   return (
-    <div className='portfolioContainer'>
+    <div className='portfolioContainer  animate'>
       <h2 style={styles.titleStyle}>My Work</h2>
       <div id="projects">
       {props.projects.map(project => (

@@ -1,6 +1,7 @@
 import React from 'react';
+import Title from './Title';
 import '../styles/Header.css';
-
+import '../title.svg';
 const styles = {
   titleStyle: {
     textAlign: 'center',
@@ -16,7 +17,7 @@ function Header() {
 
   return (
       <div  className="header" style={styles.titleStyle}>
-      <h1>Patrick Delaney</h1>
+      <Title/>
       <p style={styles.captionStyle}>Web Development, Media, Visual Arts</p>
       </div>
   );

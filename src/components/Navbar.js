@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Navbar.css';
-
+import anime from 'animejs/lib/anime.es.js';
 
 const styles = {
   navbarStyle: {
@@ -13,6 +13,18 @@ const styles = {
 };
 
 function Navbar({ currentPage, pageHandler }) {
+  var animation =
+  anime({
+    targets: 'section',
+    translateX: [-100, 0], // from 100 to 250
+    delay: 10,
+    duration: 1000
+  });
+  async function changePage(page){
+      animation.reverse();
+      animation.finished.then(pageHandler(page))
+      animation.restart();
+  }
 
   return (
     <nav style={styles.navbarStyle} className="navbar">
@@ -20,7 +32,7 @@ function Navbar({ currentPage, pageHandler }) {
       <li className="nav-item">
         <a
           href="#about"
-          onClick={() => pageHandler('About')}
+          onClick={() => changePage('About')}
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
           About
@@ -29,7 +41,7 @@ function Navbar({ currentPage, pageHandler }) {
       <li className="nav-item">
         <a
           href="#portfolio"
-          onClick={() => pageHandler('Portfolio')}
+          onClick={() => changePage('Portfolio')}
           className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
         >
           Portfolio
@@ -38,7 +50,7 @@ function Navbar({ currentPage, pageHandler }) {
       <li className="nav-item">
         <a
           href="#resume"
-          onClick={() => pageHandler('Resume')}
+          onClick={() => changePage('Resume')}
           className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
         >
           Resume
@@ -47,7 +59,7 @@ function Navbar({ currentPage, pageHandler }) {
       <li className="nav-item">
         <a
           href="#contact"
-          onClick={() => pageHandler('Contact')}
+          onClick={() => changePage('Contact')}
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
         >
           Contact
