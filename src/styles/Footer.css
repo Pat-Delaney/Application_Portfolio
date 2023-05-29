@@ -1,8 +1,9 @@
 :root{
-    --tyrian-purple: #611c35ff;
-    --dark-slate-gray: #254441ff;
-    --cosmic-latte: #f9f5e3ff;
-    --zomp: #43aa8bff;
+    --rich-black: #031926ff;
+    --teal: #468189ff;
+    --cambridge-blue: #77aca2ff;
+    --ash-gray: #9dbebbff;
+    --parchment: #f4e9cdff;
 }
 footer{
     text-align: center;

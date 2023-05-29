@@ -1,14 +1,11 @@
 :root{
-    --tyrian-purple: #611c35ff;
-    --dark-slate-gray: #254441ff;
-    --cosmic-latte: #f9f5e3ff;
-    --zomp: #43aa8bff;
+    --rich-black: #031926ff;
+    --teal: #468189ff;
+    --cambridge-blue: #77aca2ff;
+    --ash-gray: #9dbebbff;
+    --parchment: #f4e9cdff;
 }
 
-#about_links {
-    display:flex;
-    flex-direction: row;
-}
 input[type=text], select, textarea {
     width: 100%; 
     padding: 12px; 
@@ -22,7 +19,7 @@ input[type=text], select, textarea {
   
 
   input[type=submit] {
-    background-color: var(--zomp );
+    background-color: var(--teal );
     color: white;
     padding: 12px 20px;
     border: none;
@@ -32,13 +29,13 @@ input[type=text], select, textarea {
   
   
   input[type=submit]:hover {
-    background-color: var(--medium-slate-blue);
+    background-color: var(--cambridge-blue);
   }
   
   
   .formContainer {
     border-radius: 5px;
-    border: solid var(--grey);
+    border: solid var(--ash-gray);
     background-color: hsla(0, 0%, 100%, 0.3);
     padding: 20px;
     max-width: 90%;
@@ -52,7 +49,7 @@ input[type=text], select, textarea {
     max-width: fit-content;
     padding:10px;
     border-radius: 5px;
-    border: solid var(--grey);
+    border: solid var(--ash-gray);
     text-align: center;
     text-decoration: none;
     margin: auto;
@@ -60,42 +57,23 @@ input[type=text], select, textarea {
   }
   #contactInfo a{
     text-decoration: none;
-    color:var(--dark-slate-gray);
+    color:var(--cambridge-blue);
   }
   .projectCard{
     background-color: hsla(49, 65%, 93%, 1.3);
   }
   section{
-    border: solid var(--dark-slate-gray);
-    background-color: hsla(174, 30%, 53%, .3);
     border-radius: .5em;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(20px);
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    padding: 5px;
     max-width: 90%;
     animation-name: slideInLeft;
-    animation-duration: 1.8s;
+    animation-duration: .75s;
   }
 section p {
     display:flex;
 }
-.aboutMe #patrick_img{
-    margin: 15px;
-    float: left;
-    display:inline;
-}
-#about_links a{
-    margin:auto;
-}
-#about_links i{
-    display: inline-block;
-    color: var(--dark-slate-gray);
-    background:none;
-    text-decoration: none;
-    margin: 10px;
-}
+
 .portfolioContainer{
     max-width: 100%;
     display:flex;
@@ -176,7 +154,7 @@ li{
     text-align: left;
 }
 .skillItem{
-    color:var(--tyrian-purple);
+    color:var(--parchment);
     font-size: 20px;
     background-color: hsla(49, 65%, 93%,.6);
     border: solid var(--grey) 5px;
@@ -195,7 +173,7 @@ li{
 .subsubmenu li{
     list-style: none;
     margin-top: -6px;
-    color: var(--tyrian-purple);
+    color: var(--teal);
 }
 .skillItem li{
     color:var(--dark-slate-gray);
@@ -273,15 +251,6 @@ iframe{
         margin: 5px;
         position: relative;
         bottom: -40px;
-    }
-    .aboutMe #patrick_img{
-        align-self: center;
-        margin: 0px;
-        width: 80%;
-        float:unset;
-        display:flex;
-        flex-wrap: wrap;
-        position:initial;
     }
     .aboutMe{
         align-items: center;

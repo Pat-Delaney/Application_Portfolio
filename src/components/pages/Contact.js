@@ -23,10 +23,10 @@ export default function Contact() {
     </div>
     <div className="formContainer">
     <form action="mailto:pdelaney@outlook.com" method="GET">
-    <label for="subject">Subject:</label>
+    <label htmlFor="subject">Subject:</label>
     <input type="text" id="subject" name="subject" placeholder="Subject..."/>
 
-    <label for="body">Message</label>
+    <label htmlFor="body">Message</label>
     <textarea id="body" name="body" placeholder="Write something.." style={styles.formStyle}></textarea>
 
     <input type="submit" value="Submit"/>

@@ -1,14 +1,69 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
-html, body{
-  height: 100%;
-  font-weight: 800;
+.block{
+background-color: white;
+position: absolute;
+display: block;
+margin: 0;
+height: 0px;
+width: 0px;
+z-index: 10;
+border-radius: 1px;
 }
 
-svg {
-    display: block;
-    font: 8em 'Montserrat';
-    width: 960px;
-    height: 300px;
-    margin: 0 auto;
+.title{
+margin: auto;
+width: 250px;
+}
+.title h1{
+    position: relative;
+    display: inline-block;
+    opacity:1;
+    top: 5%;
+    font-size: 30px;
+}
+.title .block{
+    top: 10%;
+    left: 10%;
+}
+.role p{
+    opacity: 1;
+    position: relative;
+    font-size: 15px;
+    height: 15px;
+    padding: 5px;
+    top: -10px;
+}
+.role .block{
+
+    left: 86%;
+    top: 54%;
+}
+#title{
+    opacity: 1;
+    height: 30px;
+    text-align: center;
+    margin:auto;
+}
+.box{
+    width: 100%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+
+@media screen and (min-width: 429px) {
+    .block{
+        visibility: hidden;
+    }
+    .title{
+        clear: both;
+        display: inline-block;
+        white-space: nowrap;
+    }
+    #title{
+        position: relative;
+        top: -11px;
+        left: 500px;
+    }
+
 }

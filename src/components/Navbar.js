@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Navbar.css';
 import anime from 'animejs/lib/anime.es.js';
 
+
 const styles = {
   navbarStyle: {
     margin:'auto',
@@ -11,60 +12,47 @@ const styles = {
     margin:'auto'
   }
 };
-
+const pageTabs = [
+  'About', 'Portfolio', 'Resume', 'Contact'
+]
 function Navbar({ currentPage, pageHandler }) {
+  
+  anime({
+    targets: '.nav-item',
+    direction: 'reverse',
+    translateX: 270,
+    delay: anime.stagger(100) // increase delay by 100ms for each elements.
+  });
   var animation =
   anime({
     targets: 'section',
-    translateX: [-100, 0], // from 100 to 250
+    translateY: [-50, 0],
+    opacity: [0, 1],
     delay: 10,
     duration: 1000
   });
+
   async function changePage(page){
+    if(currentPage !== page.page){
       animation.reverse();
       animation.finished.then(pageHandler(page))
-      animation.restart();
+      animation.play();
   }
+}
 
   return (
     <nav style={styles.navbarStyle} className="navbar">
       <ul style={styles.listStyle} className="nav nav-tabs">
-      <li className="nav-item">
-        <a
-          href="#about"
-          onClick={() => changePage('About')}
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-        >
-          About
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#portfolio"
-          onClick={() => changePage('Portfolio')}
-          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-        >
-          Portfolio
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#resume"
-          onClick={() => changePage('Resume')}
-          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-        >
-          Resume
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#contact"
-          onClick={() => changePage('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-        >
-          Contact
-        </a>
-      </li>
+    {pageTabs.map(page => (
+   <li  key={page} className="nav-item">
+      <button
+      onClick={() => changePage({page})}
+      className={currentPage === {page} ? 'nav-link active' : 'nav-link'}
+    >
+      {page}
+    </button>
+    </li>
+    ))}
     </ul>
     </nav>
   );

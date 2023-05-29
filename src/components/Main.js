@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../styles/Header.css';
 import Navbar from './Navbar';
 import Header from './Header';
 import Section from './Section';
-import Footer from './Footer'
+import Footer from './Footer';
 
 
 
@@ -11,12 +11,13 @@ function Main() {
  
     const [currentPage, setCurrentPage] = useState('About');
     const pageHandler = (page) =>{
-      setCurrentPage(page);
+      if(currentPage !== page){
+      setCurrentPage(page.page);
     }
+  }
     
-
   return (
-    <main>
+    <main >
     <header>
         <Header />
         <Navbar currentPage={currentPage} pageHandler={pageHandler} />

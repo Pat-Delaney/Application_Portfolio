@@ -1,18 +1,17 @@
 :root{
-    --tyrian-purple: #611c35ff;
-    --dark-slate-gray: #254441ff;
-    --cosmic-latte: #f9f5e3ff;
-    --zomp: #43aa8bff;
+    --rich-black: #031926ff;
+    --teal: #468189ff;
+    --cambridge-blue: #77aca2ff;
+    --wine: #6d3b47ff;
+    --parchment: #f4e9cdff;
 }
 header {
-
+    position: relative;
+    top: -5px;
   display: flex;
   flex-direction: row;
-  background-color: hsla(49, 65%, 93%, .3);
-  position: relative;
-  border-radius: .5em;
+
   backdrop-filter: blur(5px);
-  border: solid var(--dark-slate-gray);
 }
 hr{
 
@@ -21,13 +20,11 @@ hr{
 header h1 {
  font-size: 40px;
  padding: 30px;
- position: relative;
- top:-10px;
- color: var(--dark-slate-gray);
+ color: var(--parchment);
 margin-bottom: -40px;
 }
 header p{
-    color: var(--tyrian-purple);
+    color: var(--wine);
 }
 @media screen and (max-width: 500px) {
     header{
