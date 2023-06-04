@@ -1,14 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7fe6ddc2.css",
-    "main.js": "/portfolio/static/js/main.654ce8e7.js",
-    "static/media/title.svg": "/portfolio/static/media/title.65ec019d5ae878e0059a28ccec33f132.svg",
+    "main.css": "/portfolio/static/css/main.f47f1573.css",
+    "main.js": "/portfolio/static/js/main.728a1a32.js",
+    "static/media/savr.png": "/portfolio/static/media/savr.613968b8b25de5706806.png",
+    "static/media/patrick.JPG": "/portfolio/static/media/patrick.8ba6d0c37d500f502511.JPG",
+    "static/media/worldwidenews.jpg": "/portfolio/static/media/worldwidenews.457674519141e1bbcc66.jpg",
+    "static/media/bargain-bin.jpg": "/portfolio/static/media/bargain-bin.6fe7bf10b19fb5c12969.jpg",
+    "static/media/weather-dashboard.jpg": "/portfolio/static/media/weather-dashboard.85b8c583da4e67a5c8c5.jpg",
+    "static/media/workscheduler.jpg": "/portfolio/static/media/workscheduler.1e9d2095267b0e1e7566.jpg",
+    "static/media/jate.png": "/portfolio/static/media/jate.875c07e3453a8eb0b66f.png",
     "index.html": "/portfolio/index.html",
-    "main.7fe6ddc2.css.map": "/portfolio/static/css/main.7fe6ddc2.css.map",
-    "main.654ce8e7.js.map": "/portfolio/static/js/main.654ce8e7.js.map"
+    "main.f47f1573.css.map": "/portfolio/static/css/main.f47f1573.css.map",
+    "main.728a1a32.js.map": "/portfolio/static/js/main.728a1a32.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fe6ddc2.css",
-    "static/js/main.654ce8e7.js"
+    "static/css/main.f47f1573.css",
+    "static/js/main.728a1a32.js"
   ]
 }

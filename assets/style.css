@@ -1,19 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&display=swap');
 :root{
-    --tyrian-purple: #611c35ff;
---dark-slate-gray: #254441ff;
---cosmic-latte: #f9f5e3ff;
---zomp: #43aa8bff;
+  --rich-black: #031926ff;
+  --teal: #468189ff;
+  --cambridge-blue: #77aca2ff;
+  --ash-gray: #9dbebbff;
+  --parchment: #f4e9cdff;
 
 }
 *{
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    
+
+    font-family: "Open Sans", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+  
+  
 header{
+    padding-top: 5% !important;
     z-index: 4;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--cambridge-blue);
+    width: 100% !important;
 }
 main{
-    min-height: 100%
+
+    min-height: 100%;
+    font-weight: 300;
 }
 body{
     z-index: 4;
@@ -21,8 +35,8 @@ body{
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100vw;
-    background-color: var(--cosmic-latte);
-    color: var(--dark-slate-gray);
+    background-color: var(--rich-black);
+    color: var(--cambridge-blue);
     width: 100%;
 }
 
@@ -64,7 +78,7 @@ body{
     font-size: 50px;
     display: flex;
     text-align: center;
-    color: var(--prussian-blue);
+    color: var(--parchment);
     text-decoration: none;
 }
 @media screen and (min-width: 280px) {
@@ -77,4 +91,13 @@ body{
     section p{
         max-width: 100%;
     }
+    main{
+      margin: auto !important;
+
+    }
+  }
+  @media screen and (max-width: 500px) {
+   header{
+    flex-direction: column !important;
+   }
   }
