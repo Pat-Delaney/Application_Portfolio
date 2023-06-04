@@ -33,11 +33,7 @@ export default function AboutMe() {
     <p style={styles.textStyle}>I am a dedicated and experienced full stack developer with a background in media and visual arts. My Bachelors Degree in Media and Visual Arts from the Evergreen State College and my Coding Bootcamp Certificate from the University of Washington inform my work in web design and development.</p><br/>
     <p style={styles.textStyle}> I am very engaged with learning the ways that technology can and does effect our everyday modern lives and how the next generation of programmers can create more powerful and accessable ways to connect people. I thrive in engaging and fast paced environments which challenge me. My history in production and manufacturing lends me a result focused approach which demands a high level of detail work.</p>
     
-    <div id="about_links animate">
-        <a style={styles.linkStyle} rel='noreferrer' href="https://github.com/Pat-Delaney" target="_blank" className="card-link"><i className="fab fa-github"></i></a>
-        <div style={styles.linkStyle} className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="delaney-pat" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/delaney-pat?trk=profile-badge"><i className="fab fa-linkedin"></i></a></div>
-        <a style={styles.linkStyle} href="mailto: pdelaney@outlook.com" className="card-link"><i className="fas fa-envelope"></i></a>
-    </div>
+   
     </div>
   );
 }

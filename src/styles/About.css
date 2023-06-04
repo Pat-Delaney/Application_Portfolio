@@ -13,8 +13,7 @@
 .aboutMe #patrick_img{
     margin: 15px;
     float: left;
-    position:relative;
-    left: -10%;
+
 
 }
 #about_links a{
@@ -26,9 +25,12 @@
     background:none;
     text-decoration: none;
     margin: 10px;
-   width: 20px;
+    width: 20px;
 }
 .aboutMe> p{
     max-width: 80%;
     padding: 10px;
 }
+@media screen and (max-width: 660px) {
+    
+  }

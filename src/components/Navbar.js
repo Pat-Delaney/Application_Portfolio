@@ -21,7 +21,7 @@ function Navbar({ currentPage, pageHandler }) {
     targets: '.nav-item',
     direction: 'reverse',
     translateX: 270,
-    delay: anime.stagger(100) // increase delay by 100ms for each elements.
+    delay: anime.stagger(100) 
   });
   var animation =
   anime({

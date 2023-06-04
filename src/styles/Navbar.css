@@ -5,18 +5,10 @@
     --ash-gray: #9dbebbff;
     --parchment: #f4e9cdff;
 }
-.navbar {
-    position: relative;
-    top: 10px;
-    list-style: none;
+
+header{
+    padding: 15px;
     display: flex;
-    flex-direction: row;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 10px;
-}
-.navbar a {
-    text-decoration: none;
 }
 ul{
     display: flex;
@@ -30,7 +22,18 @@ ul{
     font-size: 20px;
     margin: 5px;
     display:inline;
-    
+
+}
+.nav-item button{
+    background-color: var(--teal);
+}
+header p{
+    color: maroon;
+position: relative;
+}
+header h1{
+color: var(--parchment)
+
 }
 .nav-link{
     background-color: hsla(174, 30%, 53%, .3);
@@ -43,9 +46,7 @@ ul{
     color: var(--tyrian-purple)
 }
 @media screen and (max-width: 500px) {
-    .navbar{
-        text-align: center;
-    }
+
     .nav-link{
         font-size: 13px;
         padding: 3px;
@@ -53,4 +54,23 @@ ul{
     .active{
       padding: 3px;
     }
+    header{
+        flex-direction: column !important;
+    }
+  }
+  @media screen and (min-width: 500px) {
+
+    .nav-link{
+        font-size: 13px;
+        padding: 3px;
+    }
+    .active{
+      padding: 3px;
+    }
+    header{
+        flex: row !important;
+    }
+  }
+  header{
+    padding-bottom: 30px !important;
   }

@@ -17,11 +17,15 @@
   
   
 header{
+    padding-top: 5% !important;
     z-index: 4;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
+    background-color: var(--cambridge-blue);
+    width: 100% !important;
 }
 main{
+
     min-height: 100%;
     font-weight: 300;
 }
@@ -87,4 +91,13 @@ body{
     section p{
         max-width: 100%;
     }
+    main{
+      margin: auto !important;
+
+    }
+  }
+  @media screen and (max-width: 500px) {
+   header{
+    flex-direction: column !important;
+   }
   }
